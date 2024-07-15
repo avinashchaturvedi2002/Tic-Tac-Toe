@@ -21,6 +21,7 @@ boxes.forEach((box)=>
         box.disabled=true;
 
         checkWinner();
+        draw();
     })
 })
 
@@ -61,4 +62,15 @@ rstBtn.addEventListener("click",()=>{
 })
 
 
-
+const draw=()=>{
+    let flag=0;
+    boxes.forEach((box)=>{  
+        if(box.innerText==="")
+        flag=1;
+    }
+)
+if (flag!=1)
+{
+    winnerText.innerText="Game Draw";
+}
+}
